@@ -47,6 +47,8 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
     //Text Recognition Gradle ML KIT
     implementation(libs.text.recognition)
+    implementation(libs.picasso)
+
 
 
 }

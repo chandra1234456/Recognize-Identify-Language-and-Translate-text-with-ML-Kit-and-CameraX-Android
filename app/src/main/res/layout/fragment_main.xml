@@ -23,6 +23,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
                 android:src="@drawable/baseline_camera_alt_24" />
 
 
@@ -40,6 +41,14 @@
                     android:text="Capture Image"
                     app:cornerRadius="5dp" />
 
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnCropImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:text="Crop Image"
+                    app:cornerRadius="5dp" />
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btnRecognitionImage"
                     android:layout_width="wrap_content"
@@ -79,6 +88,7 @@
                     android:layout_height="wrap_content"
                     android:text="Recognized Text here....................."
                     android:textColor="@color/black"
+                    android:layout_marginBottom="10dp"
                     android:textSize="16sp" />
             </LinearLayout>
 
