@@ -7,6 +7,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.chandra.practice.identifylanguageandtranslatetextwithmlkit.databinding.ActivityMainBinding
 import com.chandra.practice.identifylanguageandtranslatetextwithmlkit.databinding.FragmentMainBinding
+import com.chandra.practice.identifylanguageandtranslatetextwithmlkit.fragment.MainFragment
 
 class MainActivity : AppCompatActivity() {
     private lateinit var mainBinding : ActivityMainBinding
@@ -14,6 +15,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         mainBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(mainBinding.root)
+
+       supportFragmentManager.beginTransaction().add(R.id.container , MainFragment()).commit()
 
     }
 }

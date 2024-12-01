@@ -32,6 +32,7 @@
                 android:orientation="horizontal">
 
                 <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnCaptureImage"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="3dp"
@@ -40,6 +41,7 @@
                     app:cornerRadius="5dp" />
 
                 <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnRecognitionImage"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="3dp"
@@ -57,6 +59,7 @@
                 android:textSize="18sp" />
 
             <ImageButton
+                android:id="@+id/ivCopyRecognizedText"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="end"
@@ -71,9 +74,10 @@
                 android:orientation="vertical">
 
                 <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvExtractedText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Recognized Text heeee....................."
+                    android:text="Recognized Text here....................."
                     android:textColor="@color/black"
                     android:textSize="16sp" />
             </LinearLayout>
